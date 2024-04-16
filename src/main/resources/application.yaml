@@ -1,0 +1,14 @@
+spring:
+    application:
+      name: config-server
+
+    server:
+      port: 8888
+
+    cloud:
+      config:
+        server:
+          git:
+            uri: https://github.com/seungwon7934/config-repo.git
+            search-paths: '{application}'
+
